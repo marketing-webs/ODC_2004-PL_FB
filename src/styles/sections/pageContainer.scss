@@ -1,0 +1,24 @@
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #b8b8b8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .container {
+        max-width: 1075px;
+        min-height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0 0 100px;
+        margin: 0;
+    }
+    @include media-md {
+        .container {
+            border-radius: 5px;
+            padding: 0 0 100px;
+            margin: 25px 0;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.instagram {
+  &__img {
+    &--mobile {
+      @media only screen and (min-width: 657px) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media only screen and (min-width: 657px){
+        display: block;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 $color-1;
+
+    .content__wrapper {
+      padding: 15px 0;
+    }
+
+    .user {
+      display: flex;
+      justify-content: space-between;
+      width: 188px;
+
+      &__info_wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      &__photo {
+        width: 37px;
+        height: 37px;
+      }
+
+      &__subscribes {
+        width: 140px;
+        font-size: 1.4rem;
+        line-height: 43px;
+        font-weight: 300;
+      }
+    }
+
+    .insta {
+      &_icon {
+        margin-right: 18px;
+        width: 21px;
+
+        &_bookmark {
+          width: 15px;
+        }
+      }
+
+      &__menu {
+        display: block;
+        width: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-1;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &__content {
+        padding: 15px 20px 5px 10px;
+        border-top: 1px solid $bg-6;
+        font-size: 1.4rem;
+        line-height: 18px;
+        color: $black;
+
+        & > span {
+          font-weight: 600;
+        }
+      }
+
+      &__tags {
+        padding: 5px 20px 15px 10px;
+        border-bottom: 1px solid $bg-6;
+        font-size: 1.4rem;
+        line-height: 18px;
+        color: $bg-5;
+
+        &_link {
+          color: $bg-5;
+        }
+      }
+
+      &__comments {
+        display: block;
+        padding: 15px 20px 15px 10px;
+        border-bottom: 1px solid $bg-6;
+        font-size: 1.4rem;
+        line-height: 18px;
+        color: $color-1;
+      }
+
+      &__icons_wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 20px 12px 10px;
+      }
+
+      &__likes_info {
+        padding: 0 20px 0 10px;
+        color: $color-1;
+      }
+    }
+  }
+}

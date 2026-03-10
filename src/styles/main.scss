@@ -1,0 +1,12 @@
+@import "_reset";
+@import "_variables";
+@import "base";
+@import "_mixins";
+
+@import "./sections/pageContainer";
+@import "./sections/pageHeaderMobile";
+@import "./sections/mainContainer";
+@import "./sections/pageFooter.scss";
+@import "./sections/pageHeaderDesktop.scss";
+@import "./sections/commentsSection.scss";
+@import "./sections/cookie.scss";

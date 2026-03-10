@@ -1,0 +1,86 @@
+.container__wrapper--comments {
+  max-width: 800px;
+  margin-top: 50px;
+  padding: 0 20px;
+
+  .x-h2-medical {
+    margin-bottom: 20px;
+  }
+
+  .x-comment-medical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    // padding: 20px 0;
+    margin: 0;
+    border-bottom: 2px solid #dedede;
+    font-family: "Roboto";
+  }
+
+  .x-comment-medical .comment-img {
+    width: 41px;
+    height: 41px;
+    margin-right: 15px;
+    margin-top: 25px;
+  }
+
+  .x-comment-medical .comment-box {
+    width: 100%;
+    margin: 35px 0 22px;
+  }
+
+  .x-comment-medical .comment-box .comment-signature {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .x-comment-medical .comment-box .comment-signature .comment-date {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  .x-comment-medical .comment-box .comment-signature .comment-text {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .x-comment-medical {
+      position: relative;
+    }
+    .comment-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .comment-signature {
+      flex-direction: column;
+      padding-left: 55px;
+    }
+    .x-comment-medical .comment-box .comment-signature .comment-date {
+      margin-top: 5px;
+      text-align: left;
+    }
+  }
+}

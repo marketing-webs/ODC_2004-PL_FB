@@ -1,0 +1,22 @@
+// variables
+$white: #fff;
+$black: #000;
+$black2: #1c1c1c;
+$red_report:#ad0000;
+$red: red;
+$green: #C7B785;
+$blue: #000dc3;
+$blue1: #0000ff;
+$borderColor: #dedede;
+$grey: #aaa;
+$banner: #3454b9;
+
+
+
+@mixin media-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+
